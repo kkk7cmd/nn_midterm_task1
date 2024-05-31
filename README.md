@@ -22,5 +22,9 @@
 `model = resnet18(pretrained=False)`
 
 ## 代码运行
-直接运行ipynb文件即可完成模型的训练，对于参数的调整可以手动更新
+直接运行ipynb文件中除最后一个cell之外的所有cell即可完成模型的训练
+
+对于参数的调整可以通过最后一个cell运行
+
+runs目录存储了tensorboard训练过程记录，其中子目录的命名格式为birds_experiment_epoch_learningRate，分别代表训练轮次和学习率，当前目录下，运行tensorboard --logdir=./runs可以查看训练过程
 
